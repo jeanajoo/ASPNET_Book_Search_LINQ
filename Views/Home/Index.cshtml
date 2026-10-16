@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Joo_Jeana_HW3.Models.Book>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    Displaying @ViewBag.SelectedBooks out of @ViewBag.AllBooks Books
+</p>
+<form asp-action="Index" asp-controller="Home" method="get">
+    <p class="form-group">
+        Search: <input name="SearchString" class="form-control"/><br/>
+        <button type="submit" class="btn btn-primary">Search</button>
+        <a asp-action="DetailedSearch" class="btn btn-success">Detailed Search</a>
+        <a asp-action="Index" class="btn btn-danger">Show All</a>
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Title)</th>
+            <th>@Html.DisplayNameFor(model => model.Author)</th>
+            <th>@Html.DisplayNameFor(model => model.PublishedDate)</th>
+            <th>Genre</th> @* Displaying the name, not ID *@
+            <th>@Html.DisplayNameFor(model => model.Price)</th>
+            <th>Format</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Title)</td>
+            <td>@Html.DisplayFor(modelItem => item.Author)</td>
+            <td>@Html.DisplayFor(modelItem => item.PublishedDate)</td>
+            <td>@Html.DisplayFor(modelItem => item.Genre.GenreName)</td>
+            <td>@Html.DisplayFor(modelItem => item.Price)</td>
+            <td>@Html.DisplayFor(modelItem => item.BookFormat)</td>
+            <td>
+                @* Requirement: Only "Details" link is allowed *@
+                <a asp-action="Details" asp-route-id="@item.BookID">Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
