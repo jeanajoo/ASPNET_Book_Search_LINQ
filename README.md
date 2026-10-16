@@ -26,8 +26,3 @@ Relational Database Optimization
 Interactive User Experience
 - Detailed book overview pages displaying author details, price, genre categorization, availability, and user ratings.
 - Clean, responsive Razor View layout powered by Bootstrap 5 for seamless desktop and mobile browsing.
-
-Interactive User Experience
-Detailed book overview pages displaying author details, price, genre categorization, availability, and user ratings.
-
-Clean, responsive Razor View layout powered by Bootstrap 5 for seamless desktop and mobile browsing.
