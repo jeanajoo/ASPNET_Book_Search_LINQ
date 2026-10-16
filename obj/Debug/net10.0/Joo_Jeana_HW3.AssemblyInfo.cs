@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Joo_Jeana_HW3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d81fc0fc9555ed62582bba6127f52b6fd8e39f9b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Joo_Jeana_HW3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Joo_Jeana_HW3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
